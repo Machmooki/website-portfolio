@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mach Suwanpatikorn | E-Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css?v=1.0.1' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css?v=1.0.1">
+    <link rel="stylesheet" href="assets/css/styles.css?v=1.0.2">
+    <link rel="shortcut icon" href="assets/img/Logo.jpg" type="image/png">
+    <title>Mach Suwanpatikorn</title>
+
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav_logo">@machmooki</a>
+            <a href="#about" class="nav_text" id="nav_about">About</a>
+            <a href="#experience" class="nav_text" id="nav_experience">Experience</a>
+            <a href="#contact" class="nav_text" id="nav_contact">Contact</a>
+            <a class="nav_text2" id="nav-toggle">Menu</a>
+
+            <!-- ----------- NAV MOBILE ----------- -->
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <i class='bx bxs-chevron-up'></i>
+                    <a href="#about" class="nav_link" id="nav_about_nav">About</a>
+                    <a href="#experience" class="nav_link" id="nav_experience_nav">Experience</a>
+                    <a href="#contact" class="nav_link" id="nav_contact_nav">Contact</a>
+                    
+                </ul>
+            </div>
+
+                <div class="right-menu">
+                    <select id="clanguage" class="language">
+                        <option value="en">🏴󠁧󠁢󠁥󠁮󠁧󠁿 English</option>
+                        <option value="th">🇹🇭 ภาษาไทย</option>
+                    </select>
+                <i class='bx bx-moon' id="theme-button"></i>
+                </div>
+        </nav>
+    </header>
+
+    <!-- ----------- HOME PAGE ----------- -->
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="home_container container grid">
+                <div class="home_data">
+                    <span class="home_greeting" id="home_greeting"></span>
+                    <h1 class="home_name" id="home_name">Mach Suwanpatikorn</h1>
+                    <h3 class="home_education" id="home_work">From Vajiravudh College</h3>
+                </div>
+                    
+                <div id="bg-profile" class="home_handle">
+                    <img src="assets/img/mach.png" alt="" class="home_img">
+                </div>
+
+                <div class="home_social">
+                    <a href="https://github.com/machmooki" target="_blank" class="home_social-link">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://www.facebook.com/Mach.Mooki" target="_blank" class="home_social-link">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="https://www.instagram.com/mmoo.ki/" target="_blank" class="home_social-link">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                </div>
+
+                <a href="#about" class="home_scroll">
+                    <i class='bx bx-chevrons-down home_scroll-icon'></i>
+                    <span id="home_scroll" class="home_scroll-name">Scroll Down</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- ----------- ABOUT PAGE ----------- -->
+        <section class="about section" id="about">
+            <h2 id="about_title" class="section_title">About Me</h2>
+
+            <div class="about_container container grid">
+                <img src="assets/img/mach2.jpg" alt="Mach Suwanpatikorn" class="about_img">
+
+                <div class="about_data">
+                    <div class="about_info">
+                        <div class="about_box" id="about_btn_programming" onclick="programming_display()">
+                            <i class='bx bxs-terminal about_icon'></i>
+                            <h3 class="about_title" id="about_list1" >Skill</h3>
+                        </div>
+                        <div class="about_box" id="about_btn_business" onclick="business_display()">
+                            <i class='bx bxs-business about_icon'></i>
+                            <h3 class="about_title" id="about_list3">Education</h3>
+                        </div>
+                        <div class="about_box" id="about_btn_cybersecurity" onclick="cybersecurity_display()">
+                            <i class='bx bxs-coffee about_icon'></i>
+                            <h3 class="about_title" id="about_list2" >Hobbies</h3>
+                        </div>
+                    </div>
+                    <div id="about_box_programming" style="display: none;">                    
+                        <ul class="about_skill">
+                            <div class="about_skill-close" onclick="details_display()">X</div>
+                            <h3 class="about_skill-title">Skills</h3>
+                            <li><b>Frontend</b> — HTML, CSS</li>
+                            <li><b>Backend</b> — Javascript, PHP</li>
+                            <li><b>Programming</b> — C, C++, Python, Java, Lua</li>
+                            <li><b>Database</b> — MySQL, MariaDB, MongoDB</li>
+                        </ul>
+                    </div>
+                    <div id="about_box_cybersecurity" style="display: none;">                    
+                        <ul class="about_skill">
+                            <div class="about_skill-close" onclick="details_display()">X</div>
+                            <h3 class="about_skill-title">Hobbies</h3>
+                            <li><b>Play Games</b> - <b>Watch a movie</b> - <b>Listen Music</b> - <b>Photograph </b> - <b>Drawing</b> - <b>Play Sports</b></li>
+                        </ul>
+                    </div>
+                    <div id="about_box_business" style="display: none;">                    
+                        <ul class="about_skill">
+                            <div class="about_skill-close" onclick="details_display()">X</div>
+                            <h3 class="about_skill-title">Education</h3>
+                            <li><b>Kindergarten</b> — Wattananivej Kindergarten | อนุบาลวัฒนานิเวศ</li>
+                            <li><b>Elementary School</b> — Chokchai School | โรงเรียนโชคชัยลาดพร้าว</li>
+                            <li><b>High School</b> — Vajiravudh College | วชิราวุธวิทยาลัย</li>
+                        </ul>
+                    </div>
+                    <div id="about_box_details">                    
+                        <p class="about_description" id="about_detail">
+                            About me.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ----------- EXPEREIENCE PAGE ----------- -->
+        <section class="contact section" id="experience">
+            <h3 class="section_title" id="experience_title">Follow My Experience</h3>
+
+            <div class="contact_content container grid justify-center">
+                <div class="contact_info justify-center">
+                    <div class="contact_card">
+                        <img src="assets/img/Experience/Experience.jpg" class="experience_img"/>
+                        <h3 class="contact_card-title" id="experience_1_title">experience</h3>
+                        <h6 id="experience_1_subtitle">Detail</h6>
+                    </div>
+                    <div class="contact_card">
+                        <img src="assets/img/Experience/Experience2.jpg" class="experience_img"/>
+                        <h3 class="contact_card-title" id="experience_2_title">experience</h3>
+                        <h6 id="experience_2_subtitle">Detail</h6>
+                    </div>
+                    <div class="contact_card">
+                        <img src="assets/img/Experience/Experience3.jpg" class="experience_img"/>
+                        <h3 class="contact_card-title" id="experience_3_title">experience</h3>
+                        <h6 id="experience_3_subtitle">Detail</h6>
+                    </div>
+                    <div class="contact_card">
+                        <img src="assets/img/Experience/Experience6.jpg" class="experience_img"/>
+                        <h3 class="contact_card-title" id="experience_4_title">experience</h3>
+                        <h6 id="experience_4_subtitle">Detail</h6>
+                    </div>
+                    <div class="contact_card">
+                        <img src="assets/img/Experience/Experience5.jpg" class="experience_img"/>
+                        <h3 class="contact_card-title" id="experience_5_title">experience</h3>
+                        <h6 id="experience_5_subtitle">Detail</h6>
+                    </div>
+                    <div class="addition_box">
+                        <div class="addition_box_viewmore">
+                                <i class='bx bx-dots-horizontal-rounded addition_viewmore contact_card-icon'></i>
+                                <div class="addition_box_link">
+                                    <a href="activity.html" class="contact_button" id="company_ex_btn">
+                                        View more >
+                                    </a>
+                                </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- ----------- CONTACT PAGE ----------- -->
+        <section class="contact section" id="contact">
+            <h3 class="section_title" id="contact_title">Contact Me</h3>
+
+            <div class="contact_content container grid">
+                <div class="contact_info">
+                    <div class="contact_card">
+                        <i class='bx bx-mail-send contact_card-icon'></i>
+                        <h3 class="contact_card-title" id="contact_list1">Email</h3>
+                        <span class="contact_card-data">machmooki@gmail.com</span>
+
+                        <a href="mailto:machmooki@gmail.com" target="_blank" class="contact_button" id="contact_1_btn">
+                            Email Me >
+                        </a>
+                    </div>
+
+                    <div class="contact_card">
+                        <i class='bx bx-phone contact_card-icon'></i>
+                        <h3 class="contact_card-title" id="contact_list2">Phone</h3>
+                        <span class="contact_card-data">061 154 1935</span>
+
+                        <a href="tel:+66611541935" target="_blank" class="contact_button" id="contact_2_btn">
+                            Call Me >
+                        </a>
+                    </div>
+
+                    <div class="contact_card">
+                        <i class='bx bxl-instagram contact_card-icon'></i>
+                        <h3 class="contact_card-title" id="contact_list3">Instagram</h3>
+                        <span class="contact_card-data">mmoo.ki</span>
+
+                        <a href="https://www.instagram.com/mmoo.ki/" target="_blank" class="contact_button" id="contact_3_btn">
+                            Follow Me >
+                        </a>
+                    </div>
+
+                    <div class="contact_card">
+                        <i class='bx bxl-facebook contact_card-icon'></i>
+                        <h3 class="contact_card-title" id="contact_list4">Facebook</h3>
+                        <span class="contact_card-data">Mach Mooki</span>
+
+                        <a href="https://www.facebook.com/Mach.Mooki" target="_blank" class="contact_button" id="contact_4_btn">
+                            Add Me >
+                        </a>
+                    </div>
+
+                    <div class="contact_card">
+                        <i class='bx bxl-github contact_card-icon'></i>
+                        <h3 class="contact_card-title" id="contact_list5">Github</h3>
+                        <span class="contact_card-data">Machmooki</span>
+
+                        <a href="https://github.com/Machmooki" target="_blank" class="contact_button" id="contact_5_btn">
+                            Add Me >
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js?v=1.0.1"></script>
+    <script src="assets/js/main.js?v=1.0.1"></script>
+    <script src="assets/js/about.js?v=1.0.1"></script>
+    <script src="assets/js/multilang.js?v=1.0.3"></script>
+    <script src="assets/js/swiper-bundle.min.js?v=1.0.1"></script>
+    <script src="assets/js/mixitup.min.js?v=1.0.1"></script>
+   
+</body>
+</html>
